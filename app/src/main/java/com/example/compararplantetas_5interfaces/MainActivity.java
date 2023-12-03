@@ -29,10 +29,10 @@ public class MainActivity extends AppCompatActivity {
         autoCompleteTextView1 = findViewById(R.id.autoCompleteTextView1);
         autoCompleteTextView2 = findViewById(R.id.autoCompleteTextView2);
         diametro1 = findViewById(R.id.text1);
-        distancia1 = findViewById(R.id.text2);
-        densidad1 = findViewById(R.id.text3);
-        diametro2 = findViewById(R.id.text4);
-        distancia2 = findViewById(R.id.text5);
+        distancia1 = findViewById(R.id.text3);
+        densidad1 = findViewById(R.id.text5);
+        diametro2 = findViewById(R.id.text2);
+        distancia2 = findViewById(R.id.text4);
         densidad2 = findViewById(R.id.text6);
 
 
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         planetas.add(new Planeta("Tierra", 1, 1, 5520));
         planetas.add(new Planeta("Marte", 0.53, 1.542, 3960));
         planetas.add(new Planeta("Jupiter", 11.2, 5.203, 1350));
-        planetas.add(new Planeta("Saturno", 9, 0.387, 5400));
+        planetas.add(new Planeta("Saturno", 9.41, 9.539, 700));
         planetas.add(new Planeta("Urano", 3.38, 19.81, 1200));
         planetas.add(new Planeta("Neptuno", 3.81, 30.07, 1500));
         planetas.add(new Planeta("Pluton", 0, 39.44, 5));
@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, planetas);
         autoCompleteTextView1.setAdapter(adapter);
         autoCompleteTextView2.setAdapter(adapter);
+
 
 
 

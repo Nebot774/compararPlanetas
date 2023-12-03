@@ -21,10 +21,8 @@ public class Planeta {
 
     @Override
     public String toString() {
-        return "Nombre: " + nombre +
-                "\nDiametro: " + diametro +
-                "\nDistancia al Sol: " + distanciaSol +
-                "\nDensidad: " + densidad;
+        return "Nombre: " + nombre ;
+
     }
 
 }
